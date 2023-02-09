@@ -13,4 +13,4 @@ jobs:
     name: hello
     runs-on: ubuntu-latest
     steps:
-    - run: echo "msg=${{ inputs.msg }}""
+    - run: echo "msg=${{ inputs.msg }}"

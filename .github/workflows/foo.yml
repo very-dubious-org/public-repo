@@ -1,0 +1,16 @@
+name: Foo
+
+on:
+  workflow_call:
+    inputs:
+      msg:
+        required: false
+        type: string
+        default: Hello World!
+
+jobs:
+  first:
+    name: hello
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "msg=${{ inputs.msg }}""
